@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toggle</title>
+	<style type="text/css">
+		body{
+			width: 150px;
+			height: 40px;
+		}
+		span{
+			display: inline-block;
+			font-size: 15px;
+			line-height: 50px;
+		}
+		label{
+			height: 50px;
+			float: right;
+		}
+		div{
+			width: 50px;
+			height: 20px;
+			position: relative;
+			top: 6px;
+			display: inline-block;
+			border-radius: 20px;
+			cursor: pointer;
+			background-color: rgba(0,0,0,0.1);
+		}
+		div:before{
+			content: "";
+			position: absolute;
+			width: 20px;
+			border-radius: 20px;
+			height:18px;
+			top: 1px;
+			left: 0px;
+			transition-duration: 0.5s;
+			background-color: #0018FF;
+		}
+		label input:checked +div:before{
+			left: 30px;
+		}
+		label input:checked +div{
+			background-color:lightblue;
+		}
+		.cb{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<label>
+	<span>Auto Login :</span>&nbsp;&nbsp;
+	<input type="checkbox" class="cb">
+	<div></div>
+</label>
+</body>
+</html>

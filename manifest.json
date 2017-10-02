@@ -1,0 +1,68 @@
+{
+  "manifest_version": 1,
+  "name": "VTOP beta enhancer",
+  "description": "Get a better experience at VTOP beta site",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://vtopbeta.vit.ac.in/"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "",
+        ""
+      ],
+      "js": [
+        "",
+        ""
+      ],
+      "css": [
+        ""
+      ]
+    },
+    {
+      "all_frames": true,
+      "js": [
+        ""
+      ],
+      "css": [
+        ""
+      ],
+      "matches": [
+        ""
+      ]
+    },
+    {
+      "all_frames": true,
+      "js": [
+        ""
+      ],
+      "matches": [
+        ""
+      ]
+    },
+    {
+      "matches": [
+        "",
+        ""
+      ],
+      "js": [
+        ""
+      ]
+    },
+    {
+      "all_frames": true,
+      "js": [
+        ""
+      ],
+      "matches": [
+        ""
+      ]
+    }
+  ]
+}
